@@ -1,0 +1,13 @@
+<div fxLayout="column" fxLayoutAlign="space-around left">
+    <div fxLaylout="row" fxLayoutAlign="space-between">
+      <mat-form-field fxFlex="100">
+          <mat-hint>Fomulario De Linguagens</mat-hint><br>
+        <input matInput placeholder="Informe nome da linguagem" [(ngModel)]="dados.post.nome">
+      </mat-form-field>
+    </div>
+</div>
+<br>
+<div style="text-align: center;">
+    <button mat-button color="primary" (click)="salvar()">Salvar</button>
+    <button mat-button color="warn" (click)="cancelar()">Cancelar</button>
+</div>
